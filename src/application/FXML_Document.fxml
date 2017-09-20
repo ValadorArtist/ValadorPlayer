@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane prefHeight="520.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXML_Controller">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="350.0" onMouseClicked="#setOnMouseClicked" onSwipeLeft="#SlideIn" />
+      <VBox fx:id="vbox" alignment="BOTTOM_CENTER" maxHeight="100.0" onMouseEntered="#SlideIn" onMouseExited="#SlideOut" prefHeight="98.0" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Slider fx:id="sliderTime" onMouseClicked="#changeSliderTime" onMousePressed="#changeSliderTime" onMouseReleased="#changeSliderTime" prefHeight="30.0" />
+            <HBox alignment="CENTER" prefHeight="68.0">
+               <children>
+                  <Button fx:id="openFileButton" accessibleRole="NODE" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#buttonClicked" prefHeight="48.0" prefWidth="48.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="playButton" accessibleRole="NODE" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#play" prefHeight="48.0" prefWidth="48.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="pauseButton" accessibleRole="NODE" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="48.0" prefWidth="48.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="stopButton" accessibleRole="NODE" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#stop" prefHeight="48.0" prefWidth="48.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#slower" prefHeight="32.0" prefWidth="42.0" text="&lt;&lt;&lt;">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#slow" prefHeight="32.0" prefWidth="42.0" text="&lt;&lt;" />
+                  <Button mnemonicParsing="false" onMouseClicked="#fast" prefHeight="32.0" prefWidth="42.0" text="&gt;&gt;" />
+                  <Button mnemonicParsing="false" onMouseClicked="#faster" prefHeight="32.0" prefWidth="42.0" text="&gt;&gt;&gt;">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="withSound" mnemonicParsing="false" onMouseClicked="#NoVolume" prefHeight="48.0" prefWidth="48.0">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Slider fx:id="sliderVolume" onMouseClicked="#changeVolume" onMousePressed="#changeVolume" onMouseReleased="#changeVolume" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

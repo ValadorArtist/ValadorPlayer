@@ -1,0 +1,42 @@
+#openFileButton{
+	-fx-background-image: url("../image/folder.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
+#playButton{
+	-fx-background-image: url("../image/play.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
+#pauseButton{
+	-fx-background-image: url("../image/pause.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
+#stopButton{
+	-fx-background-image: url("../image/stop.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
+#withSound{
+	-fx-background-image: url("../image/WithS.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
+#withoutSound{
+	-fx-background-image: url("../image/WithoutS.png"); 
+	-fx-background-size: 48 48;
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat ;	
+}
+
